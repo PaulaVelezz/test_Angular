@@ -1,4 +1,16 @@
-# AngularTest
+# Angular Test
+
+## 💻 STACK :
+
+- HTML5
+- Sass
+- TypeScript
+- Angular.js (v.18)
+- Json Server (https://www.npmjs.com/package/json-server)
+- PrimeNG (Angular UI Component Library)
+<br/>
+
+## 🚀 INSTRUCCIONES PARA CLONAR Y EJECUTAR EL PROYECTO LOCALMENTE: 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
 
@@ -23,5 +35,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
