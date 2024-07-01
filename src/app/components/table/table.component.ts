@@ -11,6 +11,7 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { DropdownModule } from 'primeng/dropdown';
 import { PeopleService } from '../../services/people/people.service';
 import { Person } from '../../services/people/person.interface';
+import { FavoritesService } from '../../services/favorites/favorites.service';
 
 
 @Component({
@@ -27,8 +28,14 @@ export class TableComponent implements OnInit {
     searchKeyword: string = '';
     loading: boolean = true;
     selectedPerson: Person | null = null;
+    favorites: any[];
 
-    constructor(private peopleService: PeopleService) {}
+    constructor(private peopleService: PeopleService, private favoritesService: FavoritesService) {
+        this.favorites = this.favoritesService.getFavorites();
+        this.favoritesService.getFavoritesObservable().subscribe(favorites => {
+            this.favorites = favorites;
+        });
+    }
 
     ngOnInit() {
         this.loading = false;
@@ -40,6 +47,7 @@ export class TableComponent implements OnInit {
 
     onRowSelect(event: any) {
         alert(`Favorito agregado: ${event.data.name}`);
+        this.favoritesService.addFavorite(event.data);
     }
     onRowUnselect(event: any) {
         alert(`Favorito eliminado: ${event.data.name}`);
