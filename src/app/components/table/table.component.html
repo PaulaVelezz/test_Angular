@@ -12,6 +12,7 @@
     >
     <ng-template pTemplate="caption">
         <div class="flex">
+            <h3>Herramienta de seguimiento de la felicidad del empleado (HSFE):</h3>
             <p-iconField iconPosition="left" class="ml-auto">
                 <p-inputIcon>
                     <i class="pi pi-search"></i>
@@ -19,17 +20,18 @@
                 <input 
                     pInputText 
                     type="text" 
-                    
+                    [(ngModel)]="searchKeyword"
+                    (input)="dt2.filterGlobal(searchKeyword, 'contains')" 
                     placeholder="Search keyword" />
             </p-iconField>
         </div>
     </ng-template>
     <ng-template pTemplate="header">
         <tr>
-            <th style="width:22%">Name</th>
-            <th style="width:22%">Category</th>
-            <th style="width:22%">Company</th>
-            <th style="width:22%">Level of happiness</th>
+            <th style="width:22%">Nombre de Usuario</th>
+            <th style="width:22%">Categoría</th>
+            <th style="width:22%">Nombre de Empresa</th>
+            <th style="width:22%">Nivel de felicidad</th>
         </tr>
         <tr>
             <th>
@@ -42,18 +44,21 @@
             <th>
                 <p-columnFilter 
                     type="text"
-                    field="category.name"
+                    field="category"
                     placeholder="Search by category" 
                     ariaLabel="Filter Category" />
             </th>
             <th>
-                <p-columnFilter field="company" matchMode="in" [showMenu]="false">
+                <p-columnFilter 
+                    field="company" 
+                    matchMode="in" 
+                    [showMenu]="false">
                     <ng-template pTemplate="filter" let-value let-filter="filterCallback">
                         <p-columnFilter 
-                        type="text"
-                        field="company" 
-                        placeholder="Search by company" 
-                        ariaLabel="Filter company" />
+                            type="text"
+                            field="company" 
+                            placeholder="Search by company" 
+                            ariaLabel="Filter company" />
                     </ng-template>
                 </p-columnFilter>
             </th>
@@ -90,7 +95,7 @@
     </ng-template>
     <ng-template pTemplate="emptymessage">
         <tr>
-            <td colspan="5">No customers found.</td>
+            <td colspan="5">No hubo resultados para su búsqueda, inténtelo de nuevo.</td>
         </tr>
     </ng-template>
     </p-table>

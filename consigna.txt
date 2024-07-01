@@ -2,7 +2,7 @@
 
 Cada persona tendra las siguiente propiedades:
 1)Nombre
-2)Categoria (Empleado o Gerente)
+2)Categoría (Empleado o Gerente)
 3)Nombre de Empresa
 4)Nivel de felicidad
 

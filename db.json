@@ -3,105 +3,105 @@
         {
             "id": "1",
             "name": "Alan Garcia",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Pizza Planet",
             "levelOfHappiness": "30"
         },
         {
             "id": "2",
             "name": "Billie Jean",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Foccatelli",
             "levelOfHappiness": "50"
         },
         {
             "id": "3",
             "name": "Cynthia Garcia",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Hurry Curry",
             "levelOfHappiness": "70"
         },
         {
             "id": "4",
             "name": "Diana Garcia",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Thai Tanic",
             "levelOfHappiness": "90"
         },
         {
             "id": "5",
             "name": "Elena Garcia",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Bob's Burgers",
             "levelOfHappiness": "100"
         },
         {
             "id": "6",
             "name": "Jonh Doe",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Pizza Planet",
             "levelOfHappiness": "10"
         },
         {	
             "id": "7",
             "name": "Martin Garcia",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Bob's Burgers",
             "levelOfHappiness": "50"
         },
         {
             "id": "8",
             "name": "Pedro Lopez",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Hurry Curry",
             "levelOfHappiness": "40"
         },
         {
             "id": "9",
             "name": "Sara Fernandez",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Thai Tanic",
             "levelOfHappiness": "20"
         },
         {
             "id": "10",
             "name": "Steve Smith",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Foccatelli",
             "levelOfHappiness": "90"
         },
         {
             "id": "11",
             "name": "Walter White",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Bob's Burgers",
             "levelOfHappiness": "100"
         },
         {
             "id": "12",
             "name": "Maria Fernandez",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Thai Tanic",
             "levelOfHappiness": "40"
         },
         {
             "id": "13",
             "name": "John Smith",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Pizza Planet",
             "levelOfHappiness": "60"
         },
         {
             "id": "14",
             "name": "Paul Smith",
-            "category": "employee",
+            "category": "Empleado",
             "company": "Foccatelli",
             "levelOfHappiness": "80"
         },
         {
             "id": "15",
             "name": "Steve Thomas",
-            "category": "manager",
+            "category": "Gerente",
             "company": "Hurry Curry",
             "levelOfHappiness": "70"
         }

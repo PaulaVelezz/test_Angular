@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { Table } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
@@ -18,14 +18,14 @@ import { Person } from '../../services/people/person.interface';
     selector: 'app-table',
     templateUrl: './table.component.html',
     standalone: true,
-    imports: [TableModule, TagModule, IconFieldModule, InputTextModule, InputIconModule, MultiSelectModule, DropdownModule, CommonModule],
+    imports: [TableModule, TagModule, IconFieldModule, InputTextModule, InputIconModule, MultiSelectModule, DropdownModule, CommonModule, FormsModule],
     providers: [PeopleService],
     styleUrl: './table.component.scss'
 })
 
 export class TableComponent implements OnInit {
     people!: Person[];
-
+    searchKeyword: string = '';
     loading: boolean = true;
 
     constructor(private peopleService: PeopleService) {}
