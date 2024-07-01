@@ -9,7 +9,6 @@ import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { DropdownModule } from 'primeng/dropdown';
-
 import { PeopleService } from '../../services/people/people.service';
 import { Person } from '../../services/people/person.interface';
 
@@ -27,6 +26,7 @@ export class TableComponent implements OnInit {
     people!: Person[];
     searchKeyword: string = '';
     loading: boolean = true;
+    selectedPerson: Person | null = null;
 
     constructor(private peopleService: PeopleService) {}
 
@@ -38,6 +38,12 @@ export class TableComponent implements OnInit {
         });
     }
 
+    onRowSelect(event: any) {
+        alert(`Favorito agregado: ${event.data.name}`);
+    }
+    onRowUnselect(event: any) {
+        alert(`Favorito eliminado: ${event.data.name}`);
+    }
     clear(table: Table) {
         table.clear();
     }

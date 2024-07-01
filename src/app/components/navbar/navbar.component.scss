@@ -12,12 +12,12 @@ header {
     display: inline-block;
     padding: 8px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #f8f9fa;
+    font-weight: 600;
     font-size: 18px;
-    border: white 1px solid;
     border-radius: 5px;
     margin: 0 5px;
+    background-color: #09090b;
 }
 
 .nav-item {
@@ -26,4 +26,13 @@ header {
 
 .nav-item i {
     margin-right: 5px;
+}
+
+.logo{
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: #09090b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
