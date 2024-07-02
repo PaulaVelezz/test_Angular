@@ -29,6 +29,7 @@ Intente usar la paginacion para los listados, recomendamos mostrar 5 a la vez.
 
 ## 📸 CAPTURA DE PANTALLA DE LAS FUNCIONALIDADES:
 [![home.png](https://i.postimg.cc/L50XdS7Q/home.png)](https://postimg.cc/zHK5WsqT)
+[![modal.png](https://i.postimg.cc/sXbjKmZb/modal.png)](https://postimg.cc/XGc6YwLg)
 
 ## 🚀 INSTRUCCIONES PARA CLONAR Y EJECUTAR EL PROYECTO LOCALMENTE: 
 
