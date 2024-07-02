@@ -21,5 +21,8 @@
                     <td> {{ favorite.levelOfHappiness }} </td>
                 </tr>
             </table>
+            <div class="clear_all">
+                <p-button (click)="clearFavorites()" severity="danger"> <i class="pi pi-trash" style="margin-right: 0.5rem"></i>Eliminar favoritos</p-button>
+            </div>
     </p-dialog>
 </div>

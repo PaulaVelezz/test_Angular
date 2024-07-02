@@ -27,4 +27,8 @@ export class ModalComponent {
   showDialog() {
     this.visible = true;
   }
+
+  clearFavorites() {
+    this.favorites = [];
+  }
 }
